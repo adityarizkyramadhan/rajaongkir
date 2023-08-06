@@ -13,11 +13,17 @@ func (a *Account) httpRequest(method, link, auth string, bodyReq io.Reader) (*Re
 		return nil, err
 	}
 	req.Header.Set("key", auth)
+	req.Header.Add("content-type", "application/x-www-form-urlencoded")
 	resp, err := a.client.Do(req)
 	if err != nil {
 		return nil, err
 	}
-	defer resp.Body.Close()
+	defer func(Body io.ReadCloser) {
+		err := Body.Close()
+		if err != nil {
+			panic(err.Error())
+		}
+	}(resp.Body)
 	body, err := io.ReadAll(resp.Body)
 	if err != nil {
 		return nil, err
