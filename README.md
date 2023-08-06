@@ -1,4 +1,4 @@
-# Proyek Sedang Berlangsung: Nama Proyek
+# Proyek Sedang Berlangsung: RajaOngkir Socket Golang
 
 ## Deskripsi Proyek
 Proyek ini berfokus pada pembuatan library rajaongkir dalam bahasa go dalam rangka mencapai penggunaan API rajaongkir yang simpel pada bahasa pemrograman golang.
