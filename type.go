@@ -20,3 +20,11 @@ func (t Type) String() string {
 		return "UNDEFINED"
 	}
 }
+
+const (
+	JNE     string = "jne"
+	POS     string = "pos"
+	TIKI    string = "tiki"
+	JNT     string = "jnt"
+	SICEPAT string = "sicepat"
+)

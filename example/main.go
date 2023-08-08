@@ -33,12 +33,14 @@ func main() {
 		Origin:      "179",
 		Destination: "343",
 		Weight:      1700,
-		Courier:     "jne",
+		Courier:     rajaongkir.JNE,
 	})
+
 	if err != nil {
 		fmt.Println(err.Error())
 		return
 	}
+	fmt.Println("Cost : ")
 	fmt.Println(costs)
 
 }
