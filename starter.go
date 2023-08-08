@@ -38,7 +38,7 @@ func (s *starter) GetCityByIDProvince(idProvince string) ([]CityResponse, error)
 	return cities, nil
 }
 
-func (s *starter) GetCost(input CostInput) ([]CostResponse, error) {
+func (s *starter) GetCost(input CostInputStarter) ([]CostResponse, error) {
 	fmt.Println(input)
 	payload := strings.NewReader(fmt.Sprintf("origin=%s&destination=%s&weight=%f&courier=%s", input.Origin, input.Destination, input.Weight, input.Courier))
 	resp, err := s.account.httpRequest("POST", s.account.typeAccount.String()+"/cost", s.account.apiKey, payload)
