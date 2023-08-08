@@ -12,7 +12,7 @@ Proyek ini berfokus pada pembuatan library rajaongkir dalam bahasa go dalam rang
 ## Tujuan Utama
 - [x] Tujuan 1: Account Starter
 - [ ] Tujuan 2: Account Basic
-- [ ] Tujuan 3: Account Pro
+- [x] Tujuan 3: Account Pro
 
 ## Tugas yang Sedang Dikerjakan
 ### [Account Starter]
@@ -26,10 +26,10 @@ Proyek ini berfokus pada pembuatan library rajaongkir dalam bahasa go dalam rang
 - [ ] Langkah 3: Menghitung biaya pengiriman dari kurir tertentu
 
 ### [Account Pro]
-- [ ] Langkah 1: Mendapatkan data provinsi
-- [ ] Langkah 2: Mendapatkan data kota
-- [ ] Langkah 3: Mendapatkan data kecamatan
-- [ ] Langkah 4: Menghitung biaya pengiriman dari kurir tertentu
+- [x] Langkah 1: Mendapatkan data provinsi
+- [x] Langkah 2: Mendapatkan data kota
+- [x] Langkah 3: Mendapatkan data kecamatan
+- [x] Langkah 4: Menghitung biaya pengiriman dari kurir tertentu
 - [ ] Langkah 5: Melacak status dan lokasi paket
 
 ## Kontak
@@ -84,4 +84,4 @@ func main() {
 
 }
 ```
-_Sidoarjo, 06 Agustus 2023_
+_Sidoarjo, 08 Agustus 2023_
